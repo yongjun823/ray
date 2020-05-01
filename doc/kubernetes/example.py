@@ -36,10 +36,8 @@ def main():
             gethostname.remote(gethostname.remote(())) for _ in range(100)
         ]
         print(Counter(ray.get(results)))
-        sys.stdout.flush()
-
+        
     print("Success!")
-    sys.stdout.flush()
 
 
 if __name__ == "__main__":
